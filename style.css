@@ -176,6 +176,42 @@ header {
     background: rgba(0,0,0,0.8);
     transform: translateY(-50%) scale(1.1);
 }
+.cards{
+    max-width:1200px;
+    margin:auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    }
+    .card {
+        background: white;
+        border-radius: 15px;
+        overflow: hidden;
+        transition: .3s;
+    }
+    
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    }
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0, 0, 0, .15);
+}
+
+
+.card h3 {
+    padding: 18px;
+}
+
+.card p {
+    padding: 0 18px 20px;
+    line-height: 1.6;
+}
 
 .mini {
     text-align: center;
@@ -438,7 +474,7 @@ footer {
 
 .slide {
     width: 100%;
-    height: 455px;
+    height: 400px;
     object-fit: cover;
     display: none;
 }
